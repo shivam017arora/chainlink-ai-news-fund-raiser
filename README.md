@@ -83,39 +83,9 @@ pytest
 #### Description:
 This endpoint accepts POST requests with a JSON payload containing a 'category' field. It fetches news related to the specified charity category and returns headlines suitable for raising funds for charities.
 
-#### Request Format:
-```json
-{
-    "category": "string"
-}
-```
-
-#### Response Format:
-```json
-{
-    "result": "array or string (depending on LLM response)"
-}
-```
-
 #### Status Codes:
 - `201 Created`: The request was successful, and relevant news headlines are returned.
 - `400 Bad Request`: The request is invalid (e.g., missing required fields).
-
-#### Example Usage:
-
-**Request:**
-```bash
-curl -X POST http://localhost:8912/api/charity \
-     -H "Content-Type: application/json" \
-     -d '{"category": "health"}'
-```
-
-**Response:**
-```json
-{
-    "result": ["Headline 1 relevant to health category", "Headline 2 relevant to health category"]
-}
-```
 
 # Future Scope
 
