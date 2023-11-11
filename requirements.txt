@@ -1,0 +1,6 @@
+Flask
+langchain
+pydantic
+python-dotenv
+Requests
+pytest
